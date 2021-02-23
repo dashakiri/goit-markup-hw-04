@@ -6,7 +6,7 @@
   --blue-color: #2196f3;
   --background-color-grey: #f5f4fa;
   --background-color-dark: #2f303a;
-  --social-icons: 175, 177, 184, 1;
+  --social-icons: #afb1b8;
   --set-gap: 30px;
 }
 
@@ -129,7 +129,6 @@ img {
 
 .icon-envelope,
 .icon-smartphone {
-  align-self: center;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -326,9 +325,9 @@ img {
 
 .member-socials {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 16px;
-  margin-left: 22px;
-  margin-right: 22px;
 }
 
 .social-icons:not(:first-child) {
@@ -349,6 +348,53 @@ img {
 .icon-link:focus {
   color: var(--primary-color-white);
   background-color: var(--blue-color);
+}
+
+/* CLIENTS */
+
+.clients {
+  padding-top: 98px;
+  padding-bottom: 96px;
+}
+
+.client-heading {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item:not(:first-child) {
+  margin-left: var(--set-gap);
+}
+
+.client-item .client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  color: var(--social-icons);
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
+
+.client-svg {
+  fill: currentColor;
 }
 
 /* PORTFOLIO PAGE */
